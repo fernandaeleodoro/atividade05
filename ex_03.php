@@ -2,5 +2,7 @@
 
 contarVogais()
 funcion contaVogais($texto){
-        $vogais['a','e','i','o','u'];
+$vogais=['a','e','i','o','u'];
+
 }
+echo "Media:" . number
