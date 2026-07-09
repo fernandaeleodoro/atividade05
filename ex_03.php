@@ -5,4 +5,4 @@ funcion contaVogais($texto){
 $vogais=['a','e','i','o','u'];
 
 }
-echo "Media:" . number
+

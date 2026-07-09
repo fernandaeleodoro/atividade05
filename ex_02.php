@@ -10,6 +10,8 @@ function calcularMedia($n1,$n2,$n3){
     $situacao ="Reprovado";
 
    }
+   
+ echo "Média: " . number_format($media, 2) . " - Situação: $situacao";
+}
    } 
     
-   }
