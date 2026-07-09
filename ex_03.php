@@ -1,8 +1,17 @@
-<?php 
+<?php
 
-contarVogais()
-funcion contaVogais($texto){
-$vogais=['a','e','i','o','u'];
+function contarVogais($texto) {
+    $vogais = ['a', 'e', 'i', 'o', 'u'];
+    $contador = 0;
 
+    $texto = strtolower($texto);
+
+    for ($i = 0; $i < strlen($texto); $i++) {
+        if (in_array($texto[$i], $vogais)) {
+            $contador++;
+        }
+    }
+
+    return $contador;
 }
 
