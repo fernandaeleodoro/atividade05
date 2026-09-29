@@ -1,29 +1,29 @@
-<?php 
+<?php
 
-function verifiqueNumero($numero){
-
-if ($numero > 0){
-    $sinal="Positivo";
-}elseif ($numero <0){
-    $sinal="Negativo";
-}else{
-    $sinal= "zero";
-    
-}
-
-if ($numero !=0){
-    if ($numero % 2 ==0) {
-    $paridade ="Par";
-    }else{
-          $paridade = "Ímpar";
+function verificarNumero($numero)
+{
+    if ($numero == 0) {
+        echo "O número é zero.";
+    } else {
+        if ($numero % 2 == 0) {
+            echo "O número é par.<br>";
+        } else {
+            echo "O número é ímpar.<br>";
         }
 
-        echo "O número $numero é $paridade e $sinal.";
-    } else {
-        echo "O número é Zero.";
+        if ($numero > 0) {
+            echo "O número é positivo.";
+        } else {
+            echo "O número é negativo.";
+        }
     }
 }
 
+$numero = 8;
+
+verificarNumero($numero);
+
+?>
 
 
 
