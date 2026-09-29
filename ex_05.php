@@ -9,7 +9,7 @@ function ordenarNomes($lista)
     return $nomes;
 }
 
-$lista = "Maria, Ana, Fernanda, João, Neiva";
+$lista = "Neiva, Ana, Fernanda, João,Maria";
 
 $nomesOrganizados = ordenarNomes($lista);
 
