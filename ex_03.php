@@ -1,17 +1,25 @@
 <?php
 
-function contarVogais($texto) {
-    $vogais = ['a', 'e', 'i', 'o', 'u'];
-    $contador = 0;
-
+function contarVogais($texto)
+{
     $texto = strtolower($texto);
+    $vogais = "aeiou";
+    $quantidade = 0;
 
     for ($i = 0; $i < strlen($texto); $i++) {
-        if (in_array($texto[$i], $vogais)) {
-            $contador++;
+        if (strpos($vogais, $texto[$i]) !== false) {
+            $quantidade++;
         }
     }
 
-    return $contador;
+    return $quantidade;
 }
 
+$texto = "Olá, meu nome é Fernanda";
+
+$resultado = contarVogais($texto);
+
+echo "Texto: " . $texto . "<br>";
+echo "Quantidade de vogais: " . $resultado;
+
+?>
