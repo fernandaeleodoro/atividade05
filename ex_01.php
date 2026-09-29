@@ -24,6 +24,7 @@ $numero = 8;
 verificarNumero($numero);
 
 ?>
+.
 
 
 
