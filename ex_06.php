@@ -38,3 +38,4 @@ echo "Produto mais caro: " . $produto["nome"] . "<br>";
 echo "Valor: R$ " . number_format($produto["valor"], 2, ",", ".");
 
 ?>
+..
