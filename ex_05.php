@@ -1,10 +1,22 @@
-  <?php 
+ <?php
 
-function ordenarNomes(lista) {
-    let nomes = lista.split(",");
-      nomes.sort();
-      return nomes;
+function ordenarNomes($lista)
+{
+    $nomes = explode(",", $lista);
+
+    sort($nomes);
+
+    return $nomes;
 }
-let lista = "Fernanda,Maria,João,Neiva";
 
-console.log(ordenarNomes(lista));
+$lista = "Carlos, Ana, Fernanda, Bruno, Maria";
+
+$nomesOrganizados = ordenarNomes($lista);
+
+echo "Nomes em ordem alfabética:<br><br>";
+
+foreach ($nomesOrganizados as $nome) {
+    echo $nome . "<br>";
+}
+
+?>
